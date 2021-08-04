@@ -10,10 +10,17 @@
   width: 400px;
   height: 100vh;
   background-color: #4008a8;
-  
 }
 
 .dummy-page {
   /* justify-content: space-around; */
   display: flex;
+}
+
+.App-logo {
+  z-index: 100;
+}
+
+.pant {
+  position: absolute;
 }
