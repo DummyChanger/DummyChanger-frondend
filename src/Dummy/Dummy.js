@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+
 
 function Dummy() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return <div></div>;
 }
 
-export default Dummy
+export default Dummy;
