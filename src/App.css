@@ -7,7 +7,7 @@
 }
 
 .dummy-panel {
-  width: 400px;
+  width: 300px;
   height: 100vh;
   background-color: #4008a8;
 }
@@ -23,4 +23,13 @@
 
 .pant {
   position: absolute;
+}
+.garment-color{
+  width: 30px;
+  height: 30px;
+}
+
+.test{
+  width: 300px;
+  height: 300px;
 }

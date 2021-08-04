@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import test0 from "../Img/garment_1/00.png";
 import test1 from "../Img/garment_1/01.png";
 import test2 from "../Img/garment_1/02.png";
@@ -7,9 +7,13 @@ import test4 from "../Img/garment_1/03.png";
 
 function DummyPanel() {
   const [isShortSleve, setIsShortSleve] = useState(true);
+  const [bgColor, setColor] = useState("#ffc107");
 
   const setSleve = (value) => {
     setIsShortSleve(value);
+  };
+  const setColorBg = (color) => {
+    setColor(color);
   };
 
   return (
@@ -34,9 +38,46 @@ function DummyPanel() {
                 Long Sleve
               </button>
             </div>
+
+            <h4 className="mt-3">Colors</h4>
+            <div>
+              <button
+                type="button"
+                style={{ backgroundColor: "#ffc107" }}
+                className="btn btn-light garment-color"
+                onClick={() => setColorBg("#ffc107")}
+              ></button>
+              <button
+                type="button"
+                style={{ backgroundColor: "#dc3545" }}
+                className="btn btn-light ms-3 garment-color"
+                onClick={() => setColorBg("#dc3545")}
+              ></button>
+              <button
+                type="button"
+                style={{ backgroundColor: "#6c757d" }}
+                className="btn btn-light ms-3 garment-color"
+                onClick={() => setColorBg("#6c757d")}
+              ></button>
+              <button
+                type="button"
+                style={{ backgroundColor: "#f8f9fa" }}
+                className="btn btn-light ms-3 garment-color"
+                onClick={() => setColorBg("#f8f9fa")}
+              ></button>
+              <button
+                type="button"
+                style={{ backgroundColor: "#ffc107" }}
+                className="btn btn-light ms-3 garment-color"
+                onClick={() => setColorBg("#ffc107")}
+              ></button>
+            </div>
           </div>
         </div>
-        <div style={{ position: "relative" }} className="dummy">
+        <div
+          style={{ position: "relative", backgroundColor: bgColor }}
+          className="dummy"
+        >
           <img
             src={test0}
             alt=""
@@ -67,6 +108,9 @@ function DummyPanel() {
             />
           )}
         </div>
+        {/* <div className="test" style={{ backgroundColor: bgColor }}>
+          <h1>hii</h1>
+        </div> */}
       </div>
     </>
   );
