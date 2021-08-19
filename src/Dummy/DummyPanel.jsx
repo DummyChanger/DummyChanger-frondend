@@ -1,8 +1,3 @@
-import model_front from "../Img/garment_1/model_front.png";
-import test1 from "../Img/garment_1/01.png";
-import test2 from "../Img/garment_1/02.png";
-import test3 from "../Img/garment_1/04.png";
-import test4 from "../Img/garment_1/03.png";
 import { Tab, Tabs, Button } from "react-bootstrap";
 import { Component } from "react";
 import Material from "./Material";
@@ -48,14 +43,7 @@ export default class DummyPanel extends Component {
                 <h1>Hiiii</h1>
               </Tab>
             </Tabs>
-            <div className="text-center position-absolute next-item w-100  ">
-              <Button
-                as="input"
-                type="submit"
-                value="Next"
-                className=" mb-4 px-4"
-              />
-            </div>
+           
           </div>
         </div>
       </>
