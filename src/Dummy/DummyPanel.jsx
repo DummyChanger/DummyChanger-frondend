@@ -5,6 +5,7 @@ import test3 from "../Img/garment_1/04.png";
 import test4 from "../Img/garment_1/03.png";
 import { Tab, Tabs, Button } from "react-bootstrap";
 import { Component } from "react";
+import Material from "./Material";
 
 export default class DummyPanel extends Component {
   constructor(props) {
@@ -13,67 +14,9 @@ export default class DummyPanel extends Component {
     this.state = {
       shortSleve: true,
       color: "#ffc107",
-      key: "home",
+      key: "Material",
     };
   }
-
-  // CustomizeCloth = () => {
-  //   return (
-  //     <div className="sleve">
-  //       <h4>Sleve</h4>
-  //       <div>
-  //         <button
-  //           type="button"
-  //           className="btn btn-light"
-  //           onClick={() => setSleve(true)}
-  //         >
-  //           Short Sleve
-  //         </button>
-  //         <button
-  //           type="button"
-  //           className="btn btn-light ms-3"
-  //           onClick={() => setSleve(false)}
-  //         >
-  //           Long Sleve
-  //         </button>
-  //       </div>
-
-  //       <h4 className="mt-3">Colors</h4>
-  //       <div>
-  //         <button
-  //           type="button"
-  //           style={{ backgroundColor: "#ffc107" }}
-  //           className="btn btn-light garment-color"
-  //           onClick={this.setState({})() => setColorBg("#ffc107")}
-  //         ></button>
-  //         <button
-  //           type="button"
-  //           style={{ backgroundColor: "#dc3545" }}
-  //           className="btn btn-light ms-3 garment-color"
-  //           onClick={() => setColorBg("#dc3545")}
-  //         ></button>
-  //         <button
-  //           type="button"
-  //           style={{ backgroundColor: "#6c757d" }}
-  //           className="btn btn-light ms-3 garment-color"
-  //           onClick={() => setColorBg("#6c757d")}
-  //         ></button>
-  //         <button
-  //           type="button"
-  //           style={{ backgroundColor: "#f8f9fa" }}
-  //           className="btn btn-light ms-3 garment-color"
-  //           onClick={() => setColorBg("#f8f9fa")}
-  //         ></button>
-  //         <button
-  //           type="button"
-  //           style={{ backgroundColor: "#ffc107" }}
-  //           className="btn btn-light ms-3 garment-color"
-  //           onClick={() => setColorBg("#ffc107")}
-  //         ></button>
-  //       </div>
-  //     </div>
-  //   );
-  // };
 
   render() {
     const setSleve = (value) => {
@@ -95,14 +38,13 @@ export default class DummyPanel extends Component {
               onSelect={(k) => setKey(k)}
               className="mb-3"
             >
-              <Tab eventKey="home" title="Home" className="h-100">
-                {/* <CustomizeCloth /> */}
-                <h5>Hiii</h5>
+              <Tab eventKey="Material" title="Material" className="h-100">
+                <Material />
               </Tab>
-              <Tab eventKey="profile" title="Profile">
+              <Tab eventKey="Customize" title="Customize">
                 <h1>Hiiii</h1>
               </Tab>
-              <Tab eventKey="contact" title="Contact">
+              <Tab eventKey="Payment" title="Payment">
                 <h1>Hiiii</h1>
               </Tab>
             </Tabs>
@@ -114,48 +56,6 @@ export default class DummyPanel extends Component {
                 className=" mb-4 px-4"
               />
             </div>
-          </div>
-          <div
-            style={{
-              position: "relative",
-              backgroundColor: this.state.color,
-              textAlign: "center",
-            }}
-            className="dummy"
-          >
-            <img
-              src={model_front}
-              alt=""
-              style={{ position: "absolute", height: 500 }}
-            />
-            <img
-              src={test1}
-              style={{ position: "absolute", width: 400, height: 500 }}
-              className="pant"
-              alt=""
-            />
-            <img
-              src={test2}
-              style={{ position: "absolute", width: 400, height: 500 }}
-              className="pant"
-              alt=""
-            />
-
-            {this.state.shortSleve ? (
-              <img
-                src={test4}
-                style={{ position: "absolute", width: 400, height: 500 }}
-                className="pant"
-                alt=""
-              />
-            ) : (
-              <img
-                src={test3}
-                style={{ position: "absolute", width: 400, height: 400 }}
-                className="pant"
-                alt=""
-              />
-            )}
           </div>
         </div>
       </>
