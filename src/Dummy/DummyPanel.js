@@ -118,11 +118,13 @@ function DummyPanel() {
             src={test1}
             style={{ position: "absolute", width: 400, height: 400 }}
             className="pant"
+            alt=""
           />
           <img
             src={test2}
             style={{ position: "absolute", width: 400, height: 400 }}
             className="pant"
+            alt=""
           />
 
           {isShortSleve ? (
@@ -130,12 +132,14 @@ function DummyPanel() {
               src={test4}
               style={{ position: "absolute", width: 400, height: 400 }}
               className="pant"
+              alt=""
             />
           ) : (
             <img
               src={test3}
               style={{ position: "absolute", width: 400, height: 400 }}
               className="pant"
+              alt=""
             />
           )}
         </div>
