@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import style1 from "../Img/styles/1.woman_suitpants.webp";
 import {
   Button,
   Card,
@@ -28,13 +27,13 @@ export default class CardBox extends Component {
                 height: 400,
                 width: 150,
               }}
-              image={style1}
+              image={this.props.img}
               title="Contemplative Reptile"
             />
           </div>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Lizard
+              {this.props.name}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               Lizards are a widespread group
@@ -43,7 +42,7 @@ export default class CardBox extends Component {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            <Link to="/dummy-panel">CUSTOMIZE</Link>
+            <Link to={`/dummy-panel/${this.props.id}`}>CUSTOMIZE</Link>
           </Button>
         </CardActions>
       </Card>
