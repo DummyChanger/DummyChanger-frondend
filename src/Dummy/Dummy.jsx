@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Model from "../Img/garment_1/model_front.png";
 import Pants from "../Img/garment_1/pants_front.png";
+import Shirt1 from "../Img/garment_1/shirt1.png";
 
 export default class Dummy extends Component {
   render() {
@@ -24,14 +25,14 @@ export default class Dummy extends Component {
             className="pant"
             alt=""
           />
-          {/* <img
-            src={test2}
-            style={{ position: "absolute", width: 400, height: 500 }}
+          <img
+            src={Shirt1}
+            style={{ position: "absolute", height: 500 }}
             className="pant"
             alt=""
           />
 
-          {this.state.shortSleve ? (
+          {/*  {this.state.shortSleve ? (
             <img
               src={test4}
               style={{ position: "absolute", width: 400, height: 500 }}
