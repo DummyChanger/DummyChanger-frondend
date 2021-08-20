@@ -1,6 +1,7 @@
 import { Tab, Tabs, Button } from "react-bootstrap";
 import { Component } from "react";
 import Material from "./Material";
+import Styles from "./Style";
 
 export default class DummyPanel extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export default class DummyPanel extends Component {
     this.state = {
       shortSleve: true,
       color: "#ffc107",
-      key: "Material",
+      key: "Style",
     };
   }
 
@@ -33,17 +34,16 @@ export default class DummyPanel extends Component {
               onSelect={(k) => setKey(k)}
               className="mb-3"
             >
-              <Tab eventKey="Material" title="Material" className="h-100">
-                <Material />
+              <Tab eventKey="Style" title="Style" className="h-100">
+                <Styles />
               </Tab>
               <Tab eventKey="Customize" title="Customize">
-                <h1>Hiiii</h1>
+                <Material />
               </Tab>
               <Tab eventKey="Payment" title="Payment">
                 <h1>Hiiii</h1>
               </Tab>
             </Tabs>
-           
           </div>
         </div>
       </>
