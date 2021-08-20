@@ -20,12 +20,20 @@ export default class Nav extends Component {
                   </Link>
                 </li>
               </ul>
-              <button className="btn btn-outline-light ms-1" type="submit">
-                Admin
-              </button>
-              <button className="btn btn-outline-light ms-1" type="submit">
-                Customer
-              </button>
+              <Link
+                className="btn btn-outline-light ms-1"
+                type="submit"
+                to="/login"
+              >
+                SignIn
+              </Link>
+              <Link
+                className="btn btn-outline-light ms-1"
+                type="submit"
+                to="/register"
+              >
+                SignUp
+              </Link>
             </div>
           </div>
         </nav>
