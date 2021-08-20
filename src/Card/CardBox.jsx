@@ -9,6 +9,7 @@ import {
   CardMedia,
   Typography,
 } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 export default class CardBox extends Component {
   constructor(props) {
@@ -42,7 +43,7 @@ export default class CardBox extends Component {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            Customize
+            <Link to="/dummy-panel">CUSTOMIZE</Link>
           </Button>
         </CardActions>
       </Card>

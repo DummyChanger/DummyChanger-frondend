@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "../App.css";
 import { Link } from "react-router-dom";
 import { Component } from "react";
@@ -9,7 +10,9 @@ export default class Nav extends Component {
       <div>
         <nav className="navbar nav-main navbar-expand-lg navbar-dark ">
           <div className="container-fluid">
-            <h5 className="navbar-brand">Shoop</h5>
+            <Link className="navbar-brand" to="/">
+              Shoop
+            </Link>
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
