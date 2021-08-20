@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DummyPage from "./pages/DummyPage/DummyPage";
