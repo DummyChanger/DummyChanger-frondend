@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login.jsx";
 import Register from "./pages/Register/Register.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import allReducer from "./Reducers";
 
 function App() {
   return (
