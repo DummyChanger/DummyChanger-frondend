@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Register extends Component {
   constructor(props) {
@@ -38,7 +39,7 @@ export default class Register extends Component {
               Sign Up
             </button>
             <p className="forgot-password text-right">
-              Already registered <a href="#">sign in?</a>
+              Already registered <Link href="#">sign in?</Link>
             </p>
           </form>
         </div>

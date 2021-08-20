@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Component } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
@@ -38,11 +39,11 @@ export default class Login extends Component {
               </div>
             </div>
 
-            <button type="submit" className="btn btn-primary btn-block">
+            <Link to="/" type="submit" className="btn btn-primary btn-block">
               Submit
-            </button>
+            </Link>
             <p className="forgot-password text-right">
-              Forgot <a href="#">password?</a>
+              Forgot <Link>password?</Link>
             </p>
           </form>
         </div>
