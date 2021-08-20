@@ -1,4 +1,5 @@
-import { Tab, Tabs, Button } from "react-bootstrap";
+// @ts-nocheck
+import { Tab, Tabs } from "react-bootstrap";
 import { Component } from "react";
 import Material from "./Material";
 import Styles from "./Style";
@@ -15,12 +16,6 @@ export default class DummyPanel extends Component {
   }
 
   render() {
-    const setSleve = (value) => {
-      this.setState({ shortSleve: value });
-    };
-    const setColorBg = (color) => {
-      this.setState({ color: color });
-    };
     const setKey = (value) => {
       this.setState({ key: value });
     };
@@ -32,7 +27,7 @@ export default class DummyPanel extends Component {
               id="controlled-tab-example"
               activeKey={this.state.key}
               onSelect={(k) => setKey(k)}
-              className="mb-3"
+              className="mb-3 p-1"
             >
               <Tab eventKey="Style" title="Style" className="h-100">
                 <Styles />

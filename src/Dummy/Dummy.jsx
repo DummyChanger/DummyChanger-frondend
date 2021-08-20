@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Component } from "react";
 import Model from "../Img/garment_1/model_front.png";
 import Pants from "../Img/garment_1/pants_front.png";
@@ -9,7 +10,7 @@ export default class Dummy extends Component {
       <div
         style={{
           position: "relative",
-          backgroundColor: "blue",
+          backgroundColor: "white",
         }}
         className="dummy"
       >
