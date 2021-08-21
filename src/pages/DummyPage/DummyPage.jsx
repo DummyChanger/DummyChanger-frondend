@@ -5,13 +5,15 @@ import Nav from "../../Nav/Nav.jsx";
 import "./DummyPage.css";
 
 export default class DummyPage extends Component {
+  componentDidMount() {
+  }
   render() {
     return (
       <div className="dummy-page">
         <Nav />
         <div className="d-flex">
-          <DummyPanel />
-          <Dummy />
+          <DummyPanel id={this.props.match.params.id} />
+          <Dummy id={this.props.match.params.id} />
         </div>
       </div>
     );

@@ -1,15 +1,12 @@
-const Increment = () => {
+const setLongSlevee = () => {
   return {
-    type: "INCREMENT",
-    payload: 1,
+    type: "LONG",
+  };
+};
+const setShortSlevee = () => {
+  return {
+    type: "SHORT",
   };
 };
 
-const Decrement = () => {
-  return {
-    type: "DECREMENT",
-    payload: 1,
-  };
-};
-
-export { Increment, Decrement };
+export { setLongSlevee, setShortSlevee };

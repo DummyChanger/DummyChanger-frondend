@@ -1,10 +1,10 @@
 import CounterReducer from "./CounterReducer";
-import LoggedReducer from "./IsLogged";
+import isSlevee from "./isSlevee";
 import { combineReducers } from "redux";
 
 const allReducers = combineReducers({
   counter: CounterReducer,
-  isLogged: LoggedReducer,
+  sleveeType: isSlevee,
 });
 
 export default allReducers;

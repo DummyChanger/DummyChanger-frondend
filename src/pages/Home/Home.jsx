@@ -15,7 +15,7 @@ export default class Home extends Component {
     return (
       <div>
         <Nav />
-        <div className="row px-4 py-3">
+        <div className="row px-5 py-3 d-flex justify-content-around">
           <div className="col-sm">
             <CardBox img={style1} name="Pant Suits" discrip="" id="1" />
           </div>
