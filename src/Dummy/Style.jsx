@@ -8,7 +8,6 @@ import { setLongSlevee, setShortSlevee } from "../Actions/Action";
 
 class Style extends Component {
   render() {
-    console.log(this.props.isSlevee);
     return (
       <>
         <h4>Shirts</h4>

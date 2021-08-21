@@ -1,11 +1,15 @@
 // @ts-nocheck
 import { Component } from "react";
+import { connect } from "react-redux";
 import Model from "../Img/garment_1/model_front.png";
 import Pants from "../Img/garment_1/pants_front.png";
-import Shirt1 from "../Img/garment_1/shirt1.png";
+import sleveeShort from "../Img/garment_1/sleveeShort.png";
+import sleveeLong from "../Img/garment_1/sleveeLong.png";
 
-export default class Dummy extends Component {
+class Dummy extends Component {
   render() {
+    let isSlevee = this.props.isSlevee;
+    console.log(this.props.isSlevee);
     return (
       <div
         style={{
@@ -27,7 +31,7 @@ export default class Dummy extends Component {
             alt=""
           />
           <img
-            src={Shirt1}
+            src={isSlevee == "SHORT" ? sleveeShort : sleveeLong}
             style={{ position: "absolute", height: 500 }}
             className="pant"
             alt=""
@@ -52,3 +56,9 @@ export default class Dummy extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  isSlevee: state.sleveeType,
+});
+
+export default connect(mapStateToProps, null)(Dummy);
