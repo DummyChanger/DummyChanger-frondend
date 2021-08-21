@@ -18,7 +18,6 @@ export default class DummyPanel extends Component {
     const setKey = (value) => {
       this.setState({ key: value });
     };
-    console.log(this.props.isSlevee);
     return (
       <>
         <div className="dummy-page">
@@ -45,4 +44,3 @@ export default class DummyPanel extends Component {
     );
   }
 }
-

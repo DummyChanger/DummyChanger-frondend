@@ -8,6 +8,7 @@ import { setLongSlevee, setShortSlevee } from "../Actions/Action";
 
 class Style extends Component {
   render() {
+    console.log(this.props.isSlevee);
     return (
       <>
         <h4>Shirts</h4>
@@ -16,7 +17,10 @@ class Style extends Component {
             <img src={ShortSleeve} alt="" className="style" />
             <h6>Short sleeves</h6>
           </div>
-          <div className="style-box">
+          <div
+            className="style-box"
+            onClick={() => this.props.setShortSlevee()}
+          >
             <img src={LongSleeve} alt="" className="style" />
             <h6>Short sleeves</h6>
           </div>
